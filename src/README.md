@@ -10,12 +10,6 @@ This project aims to replicate the basic functionalities and design of the popul
 
 This project was built using HTML5, CSS, JavaScript (as I know them at the time 😄).
 
-## Installation
-
-1. Clone this repository to your local machine;
-2. Navigate to the project directory;
-3. Open the "index.html" file in your favorite web browser.
-
 ## Contributing
 
 I welcome contributions from the community! If you have any ideas for improvements or new features, feel free to submit a pull request 😊.
