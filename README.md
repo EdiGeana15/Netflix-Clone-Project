@@ -1,5 +1,8 @@
 # Netflix Clone Project
 
+************************************
+# MORE UPDATES WILL BE COMING SOON ! 
+************************************
 Welcome to my Netflix clone project!
 
 ## Description
