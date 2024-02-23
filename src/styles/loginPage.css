@@ -15,11 +15,7 @@ header {
     filter: drop-shadow(10px 10px 2px);
     display: flex;
     flex-direction: row;
-}
-
-
-html {
-    background-color: black;
+    margin-left: 65px;
 }
 
 html::before {
@@ -32,15 +28,23 @@ html::before {
     bottom: 0;
     background-size: cover;
     filter: opacity(0.5);
+    width: 100%;
+    height: 100%;
     z-index: -1;
 }
+
+body {
+    background-color: black;
+}
+
+
 
 .container {
     display: flex;
     flex-direction: column;
-    row-gap: 50px;
+    row-gap: 30px;
     max-width: 450px;
-    height: 700px;
+    height: 800px;
     padding: 65px;
     margin: 10px auto;
     margin-bottom: 80px;
@@ -49,49 +53,29 @@ html::before {
     box-shadow: 0 0 40px 12px rgb(22, 22, 22);
 }
 
-.inputbox input {
-    width: 100%;
-    background-color: rgba(56, 55, 55, 0.684);
-    border: none;
-    padding: 20px;
-    border-radius: 4px;
+.form-control {
+    background-color: #21202392;
     color: white;
-    transition: all 1s ease-out;
-}
-
-.inputbox:focus-within {
-    outline: 3px ridge rgb(0, 0, 0);
-    outline-color: rgb(255, 255, 255);
     border-radius: 4px;
+    border-style: solid;
+    border-color: #979797;
 }
 
-::placeholder {
-    color: #ffffff;
+.form-control:focus:not(:placeholder-shown) {
+    background-color: #21202392;
+    color: white;
 }
 
-.inputbox input:focus::placeholder {
-    transform: translateY(-150%);
-    opacity: 1;
-    font-size: 0.8em;
-    transition: all 0.1s;
+.form-control:focus {
+    border-color: rgb(247, 247, 247);
+    box-shadow: none;
+    border: 2px solid #ced4da;
+    transition: border-color 0.3s;
 }
 
-.inputbox input:not(:focus)::placeholder {
-    transform: translateY(0);
-    opacity: 0.5;
-    transition: all 0.1s;
-}
+:root {
+    --bs-body-bg: rgba(0, 0, 0, 0);
 
-
-.inputbox input {
-    padding: 25px 20px 15px 20px;
-    font-size: 16px;
-}
-
-input[type="email"]:focus,
-input[type="password"]:focus {
-    background-color: rgba(50, 51, 68, 0.684);
-    transition: all 0.1s;
 }
 
 .button button:hover {
@@ -99,8 +83,6 @@ input[type="password"]:focus {
     box-shadow: inset 0 0 10px black;
     transition: all 0.2s ease-out;
 }
-
-
 
 .button button {
     background-color: red;
@@ -116,70 +98,32 @@ input[type="password"]:focus {
     margin-bottom: -30px;
 }
 
-.cr-wrapper input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-
+.forgotPassword {
+    color: lightgrey;
+    text-decoration: none;
+    margin-left: 30%;
+    margin-bottom: 70px;
 }
 
-.cr-wrapper span {
-    font-size: 13px;
-    color: grey;
-}
-
-.cr-wrapper {
-    display: table;
-    position: relative;
-    padding-left: 22px;
+#flexCheckDefault {
+    margin-right: -15px;
+    padding: 8px;
+    box-shadow: none;
+    border-color: grey;
+    border-radius: 2px;
     cursor: pointer;
-    margin-bottom: 5px;
+    margin-top: 0;
 }
 
-.cr-wrapper input[type="checkbox"]~.cr-input {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    height: 16px;
-    width: 16px;
-    background: #979797;
-    transition: background 250ms;
-    border: 1px solid #979797;
-    border-radius: 3px;
-    transform: translate(0, -50%);
+#flexCheckDefault:checked {
+    transition: 0.6s;
+    background-color: grey;
 }
 
-.cr-wrapper input[type="checkbox"]~.cr-input::after {
-    content: "";
-    position: absolute;
-    display: none;
-    left: 1px;
-    top: 2px;
-    width: 13px;
-    height: 12px;
-    transition: background 250ms;
-    background-color: #000000;
-    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-}
+#flexCheckDefault:hover {
+    transition: 0.3s;
+    border-color: white;
 
-.cr-wrapper input:checked~.cr-input::after {
-    display: block;
-}
-
-
-
-.cr-wrapper input[type="checkbox"]:checked~.cr-input {
-    background: #ffffff;
-    border-color: #979797;
-}
-
-.cr-wrapper input[type="checkbox"]:disabled~.cr-input {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-.cr-wrapper input[type="checkbox"]:disabled~.cr-input::after {
-    background: #FFFFFF;
 }
 
 h1 {
@@ -198,7 +142,6 @@ p {
     display: flex;
     gap: 23px;
     font-size: 14px;
-    margin-top: -23px;
 }
 
 .forget>a {
@@ -214,6 +157,7 @@ span {
 
 
 .register {
+    margin-top: -10px;
     margin-bottom: -30px;
 }
 
@@ -224,7 +168,7 @@ span {
 
 
 .google-reCAPTCHA {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .google-reCAPTCHA a {
@@ -245,6 +189,7 @@ footer {
 .contact a {
     color: rgb(198, 198, 198);
     text-decoration: none;
+    margin-left: -35px;
 }
 
 .links {
@@ -264,6 +209,8 @@ footer {
 
 li a {
     color: rgb(198, 198, 198);
+    display: flex;
+
 }
 
 a:hover {

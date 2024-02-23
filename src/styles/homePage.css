@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    src: url('fonts/netflix-sans/netflix-sans.woff'),
+        url('fonts/netflix-sans/netflix-sans.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Netflix Sans', Arial, sans-serif;
+}
+
+html {
+    background-color: black;
+}
+
+html::before {
+    background-image: url('/src/resources/background/HomePage.png');
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    filter: opacity(0.5);
+    z-index: -1;
+}
+
+header {
+    filter: drop-shadow(10px 10px 2px);
+    display: flex;
+    flex-direction: row;
+    margin-left: 65px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.759);
+    margin: auto;
+    padding: 50px 150px 70px 150px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.links li {
+    width: 20%;
+    margin-right: 50px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+li a {
+    color: rgb(198, 198, 198);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+select {
+    background-color: rgba(0, 0, 0, 0.797);
+    color: rgb(219, 219, 219);
+    width: 130px;
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.language select:focus {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.797);
+    background-color: black;
+}
