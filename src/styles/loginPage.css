@@ -75,7 +75,6 @@ body {
 
 :root {
     --bs-body-bg: rgba(0, 0, 0, 0);
-
 }
 
 .button button:hover {
@@ -99,10 +98,20 @@ body {
 }
 
 .forgotPassword {
-    color: lightgrey;
+    color: white;
     text-decoration: none;
-    margin-left: 30%;
     margin-bottom: 70px;
+    margin: 0 auto;
+}
+
+.forgotPassword:hover {
+    color: rgb(180, 180, 180);
+}
+
+.contact i {
+    font-size: 20px;
+    color: lightgray;
+    padding-left: 10px;
 }
 
 #flexCheckDefault {
@@ -129,6 +138,7 @@ body {
 h1 {
     color: white;
     font-size: 34px;
+    font-weight: bold;
 }
 
 p {

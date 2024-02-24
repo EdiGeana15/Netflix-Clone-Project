@@ -12,25 +12,31 @@
     />
     <link rel="icon" href="/src/resources/logo/logo.png" />
     <link rel="stylesheet" href="/src/styles/loginPage.css" />
+    <script
+      src="https://kit.fontawesome.com/bba7d802b8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <img
-        style="transform: scale(0.6)"
-        src="/src/resources/logo/320px-Logonetflix.png"
-        title="Netflix Logo"
-      />
+      <a href="homePage.html">
+        <img
+          style="transform: scale(0.6)"
+          src="/src/resources/logo/320px-Logonetflix.png"
+          title="Netflix Logo"
+        />
+      </a>
     </header>
     <main>
       <form>
         <div class="container">
-          <h1>Sign in</h1>
+          <h1>Sign In</h1>
           <div class="form-floating mb-3">
             <input
               type="email"
               class="form-control"
               id="floatingInput"
-              placeholder="name@example.com"
+              placeholder="Email or phone number"
               required
             />
             <label for="floatingInput" class="text-white-50"
@@ -81,7 +87,9 @@
     <footer>
       <ul class="contact">
         <li>
-          <a href="#">Questions? Contact us.</a>
+          <a href="#"
+            >Questions? Contact us.<i class="fa-solid fa-headset fa-bounce"></i
+          ></a>
         </li>
       </ul>
       <ul class="links">
