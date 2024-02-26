@@ -11,29 +11,142 @@
     font-family: 'Netflix Sans', Arial, sans-serif;
 }
 
-html {
-    background-color: black;
-}
-
 html::before {
-    background-image: url('/src/resources/background/HomePage.png');
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.501) 60%), url('/src/resources/background/background.png');
     content: "";
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background-size: cover;
     filter: opacity(0.5);
+    width: 100%;
+    height: 100%;
     z-index: -1;
 }
 
+body {
+    background-color: black;
+}
+
 header {
-    filter: drop-shadow(10px 10px 2px);
+    filter: drop-shadow(10px 10px 3px rgba(0, 0, 0, 0.737));
+    margin-left: 65px;
+    background-color: rgba(105, 60, 0, 0);
+}
+
+.header-items {
+    display: flex;
+    align-items: center;
+}
+
+.header-interactions {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    padding-right: 15%
+}
+
+#logo {
+    transition: transform 0.1s ease-in-out;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+}
+
+.language select {
+    font-size: 18px;
+    font-weight: bold;
+    width: 137px;
+    height: 30px;
+    text-align: center;
+}
+
+.language>select option {
+    background-color: #fff;
+    color: black;
+}
+
+#language-icon {
+    color: red;
+}
+
+.page-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+
+.page-content .title h1 {
+    font-weight: 1000;
+    font-size: 43px;
+}
+
+.page-content .membership-message1 h2 {
+    font-size: 23px;
+}
+
+.page-content .membership-message2 h3 {
+    font-size: 20px;
+}
+
+.form-control {
+    background-color: #00000099;
+    color: white;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #787878;
+    width: 380px;
+}
+
+.form-control:focus:not(:placeholder-shown) {
+    background-color: #21202392;
+    color: white;
+}
+
+.form-control:focus {
+    border-color: rgb(247, 247, 247);
+    box-shadow: none;
+    border: 2px solid #ced4da;
+    transition: border-color 0.3s;
+}
+
+:root {
+    --bs-body-bg: #0000008a;
+}
+
+.form-floating {
     display: flex;
     flex-direction: row;
-    margin-left: 65px;
+    gap: 8px;
+    align-items: center;
 }
+
+.get-started button:hover {
+    background-color: rgb(172, 11, 11);
+    box-shadow: inset 0 0 10px black;
+    transition: all 0.2s ease-out;
+}
+
+.get-started button {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 13px 30px;
+    border-radius: 4px;
+}
+
 
 footer {
     background-color: rgba(0, 0, 0, 0.759);
@@ -41,8 +154,6 @@ footer {
     padding: 50px 150px 70px 150px;
     display: flex;
     flex-direction: column;
-
-
 }
 
 .links {

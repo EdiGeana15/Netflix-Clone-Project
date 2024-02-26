@@ -4,28 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="/src/resources/logo/logo.png" />
     <link rel="stylesheet" href="/src/styles/homePage.css" />
+    <script
+      src="https://kit.fontawesome.com/bba7d802b8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <img
-        style="transform: scale(0.6)"
-        src="/src/resources/logo/320px-Logonetflix.png"
-        title="Netflix Logo"
-      />
+      <div class="header-items">
+        <a href="" id="logo">
+          <img
+            style="transform: scale(0.6)"
+            src="/src/resources/logo/320px-Logonetflix.png"
+            title="Netflix Logo"
+          />
+        </a>
+        <div class="header-interactions">
+          <div class="language">
+            <select class="form-select form-select-sm">
+              <option value="1">English</option>
+              <option value="2">Română</option>
+            </select>
+          </div>
+          <div class="button">
+            <button>Sign in</button>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-      <form>
+      <form class="page-content">
         <div class="title">
           <h1>Unlimited movies, TV shows, and more</h1>
         </div>
-        <div class="membership-message">
+        <div class="membership-message1">
           <h2>Watch anywhere. Cancel anytime.</h2>
         </div>
-        <div class="membership-message"></div>
-        <h3>
-          Ready to watch? Enter your email to create or restart your membership.
-        </h3>
+        <div class="membership-message2">
+          <h3>
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </h3>
+        </div>
+        <div class="form-floating mb-1">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder=""
+            required
+          />
+          <label for="floatingInput" class="text-white-50">Email address</label>
+          <div class="get-started">
+            <button>Get Started <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
       </form>
     </main>
     <footer>
@@ -53,11 +94,16 @@
         </li>
       </ul>
       <div class="language">
-        <select id="languageSelect">
-          <option value="Romanian">🌍︎&emsp;Română</option>
-          <option value="English">🌍︎&emsp;English</option>
+        <select class="form-select form-select-sm">
+          <option value="1">English</option>
+          <option value="2">Română</option>
         </select>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
