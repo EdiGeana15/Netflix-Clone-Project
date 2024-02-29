@@ -12,6 +12,7 @@
     />
     <link rel="icon" href="/src/resources/logo/logo.png" />
     <link rel="stylesheet" href="/src/styles/homePage.css" />
+    <link rel="stylesheet" href="/src/mediaQueries/homepage-responsive.css" />
     <script
       src="https://kit.fontawesome.com/bba7d802b8.js"
       crossorigin="anonymous"
@@ -29,9 +30,10 @@
         </a>
         <div class="header-interactions">
           <div class="language">
-            <select class="form-select form-select-sm">
-              <option value="1">English</option>
-              <option value="2">Română</option>
+            <i class="fa-solid fa-language" id="icon"></i>
+            <select class="form-select form-select-sm" id="language-select">
+              <option value="English">English</option>
+              <option value="Romanian">Română</option>
             </select>
           </div>
           <div class="signIn-button">
@@ -66,7 +68,9 @@
           />
           <label for="floatingInput" class="text-white-50">Email address</label>
           <div class="get-started-button">
-            <button>Get Started <i class="fa-solid fa-arrow-right"></i></button>
+            <button>
+              Get Started<i class="fa-solid fa-chevron-right ms-3"></i>
+            </button>
           </div>
         </div>
       </form>
@@ -95,10 +99,11 @@
           <a href="#">Ad Choices</a>
         </li>
       </ul>
-      <div class="language">
-        <select class="form-select form-select-sm">
-          <option value="1">English</option>
-          <option value="2">Română</option>
+      <div class="language" id="language-bottom">
+        <i class="fa-solid fa-language" id="icon"></i>
+        <select class="form-select form-select-sm" id="language-select">
+          <option value="English">English</option>
+          <option value="Romanian">Română</option>
         </select>
       </div>
     </footer>

@@ -18,6 +18,14 @@ header {
     margin-left: 65px;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 
 #logo {
     transition: transform 0.1s ease-in-out;
@@ -192,8 +200,8 @@ span {
 
 footer {
     background-color: rgba(0, 0, 0, 0.759);
-    margin: auto;
-    padding: 50px 150px 70px 150px;
+    margin: 0;
+    padding: 50px 150px 100px 150px;
 }
 
 .contact {
@@ -241,7 +249,45 @@ select {
     font-size: 15px;
 }
 
+.language select {
+    font-size: 18px;
+    font-weight: bold;
+    width: 155px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    border-color: gray;
+    background-color: rgba(35, 35, 35, 0.53);
+}
+
+.language>select option {
+    background-color: #fff;
+    color: black;
+}
+
+.language {
+    position: absolute;
+    display: flex;
+    margin-right: 120px;
+}
+
+.language i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.language select {
+    padding-left: 40px;
+}
+
 .language select:focus {
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.797);
-    background-color: black;
+    background-color: rgba(35, 35, 35, 0.53);
+}
+
+#icon {
+    color: white;
 }

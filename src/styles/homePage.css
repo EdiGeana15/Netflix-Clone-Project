@@ -24,6 +24,10 @@ html::before {
 
 body {
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -58,9 +62,12 @@ header {
 .language select {
     font-size: 18px;
     font-weight: bold;
-    width: 137px;
-    height: 30px;
+    width: 155px;
+    height: 35px;
     text-align: center;
+    color: white;
+    border-color: gray;
+    background-color: #00000099;
 }
 
 .language>select option {
@@ -68,8 +75,36 @@ header {
     color: black;
 }
 
-#language-icon {
-    color: red;
+.language {
+    position: absolute;
+    display: flex;
+    margin-right: 120px;
+}
+
+.language i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.language select {
+    padding-left: 40px;
+}
+
+#icon {
+    color: white;
+}
+
+#language-bottom,
+#language-bottom i {
+    padding-top: 100px;
+}
+
+.language select:focus {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.797);
+    background-color: #00000099;
 }
 
 .page-content {
@@ -165,10 +200,8 @@ header {
 
 footer {
     background-color: rgba(0, 0, 0, 0.759);
-    margin: auto;
-    padding: 50px 150px 70px 150px;
     display: flex;
-    flex-direction: column;
+    width: 100%;
 }
 
 .links {
@@ -192,19 +225,4 @@ li a {
 
 a:hover {
     text-decoration: underline;
-}
-
-select {
-    background-color: rgba(0, 0, 0, 0.797);
-    color: rgb(219, 219, 219);
-    width: 130px;
-    height: 50px;
-    border-radius: 4px;
-    padding-left: 10px;
-    font-size: 15px;
-}
-
-.language select:focus {
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.797);
-    background-color: black;
 }
