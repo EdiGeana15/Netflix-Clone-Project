@@ -12,7 +12,7 @@
 }
 
 html::before {
-    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.501) 60%), url('/src/resources/background/background.png');
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.501) 60%), url('/docs/resources/background/background.png');
     content: "";
     position: fixed;
     background-size: cover;
