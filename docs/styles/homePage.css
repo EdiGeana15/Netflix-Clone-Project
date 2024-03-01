@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Netflix Sans';
-    src: url('fonts/netflix-sans/netflix-sans.woff'),
-        url('fonts/netflix-sans/netflix-sans.otf');
+    src: url('/docs/fonts/netflix-sans/NetflixSans-Regular.woff2'),
+        url('/docs/fonts/netflix-sans/NetflixSans-Regular.otf');
 }
 
 * {
@@ -43,11 +43,11 @@ header {
 
 .header-interactions {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     width: 100%;
     height: 100%;
     justify-content: flex-end;
-    padding-right: 15%
+    padding-right: 15%;
 }
 
 #logo {
@@ -93,7 +93,8 @@ header {
     padding-left: 40px;
 }
 
-#icon {
+#icon1,
+#icon2 {
     color: white;
 }
 
@@ -119,12 +120,12 @@ header {
 }
 
 .page-content .title h1 {
-    font-weight: 1000;
-    font-size: 43px;
+    font-weight: bold;
+    font-size: 55px;
 }
 
 .page-content .membership-message1 h2 {
-    font-size: 23px;
+    font-size: 25px;
 }
 
 .page-content .membership-message2 h3 {
@@ -188,7 +189,7 @@ header {
     color: white;
     font-size: 15px;
     font-weight: bold;
-    padding: 5px 20px;
+    padding: 5px 30px;
     border-radius: 4px;
 }
 

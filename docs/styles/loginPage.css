@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Netflix Sans';
-    src: url('fonts/netflix-sans/netflix-sans.woff'),
-        url('fonts/netflix-sans/netflix-sans.otf');
+    src: url('/docs/fonts/netflix-sans/NetflixSans-Regular.woff2'),
+        url('/docs/fonts/netflix-sans/NetflixSans-Regular.otf');
 }
 
 * {
@@ -54,7 +54,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 25px;
     max-width: 450px;
     height: 800px;
     padding: 65px;
@@ -104,7 +104,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     border: none;
-    padding: 14px;
+    padding: 10px;
     border-radius: 4px;
     margin-bottom: -30px;
 }
@@ -177,9 +177,8 @@ span {
     color: white;
 }
 
-
 .register {
-    margin-top: -10px;
+    margin-top: 20px;
     margin-bottom: -30px;
 }
 
