@@ -37,7 +37,7 @@ body {
 }
 
 html::before {
-    background-image: url('/docs/resources/background/background.png');
+    background-image: url(/docs/resources/background/background.png);
     content: "";
     position: fixed;
     background-size: cover;
