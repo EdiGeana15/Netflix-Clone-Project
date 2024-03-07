@@ -141,6 +141,10 @@ header {
     width: 380px;
 }
 
+#label::after {
+    background-color: rgba(255, 0, 0, 0);
+}
+
 .form-control:focus:not(:placeholder-shown) {
     background-color: #21202392;
     color: white;
